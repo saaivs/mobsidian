@@ -1,23 +1,31 @@
 {
   "name": "ng-mob",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
+    "build": "ng build",
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "watch": "ng build --watch --configuration development"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "17.3.4",
+    "@angular/cdk": "17.3.4",
     "@angular/common": "17.3.4",
     "@angular/compiler": "17.3.4",
     "@angular/core": "17.3.4",
     "@angular/forms": "17.3.4",
+    "@angular/material": "17.3.4",
+    "@angular/material-experimental": "17.3.4",
     "@angular/platform-browser": "17.3.4",
     "@angular/platform-browser-dynamic": "17.3.4",
     "@angular/router": "17.3.4",
+    "@fortawesome/fontawesome-free": "6.5.2",
+    "@ngneat/transloco": "6.0.4",
+    "bootstrap5": "npm:bootstrap@5.3.3",
+    "material-design-icons-iconfont": "6.7.0",
+    "roboto-fontface": "0.10.0",
     "rxjs": "7.8.1",
     "tslib": "2.6.2"
   },
@@ -32,7 +40,7 @@
     "karma-coverage": "2.2.1",
     "karma-jasmine": "5.1.0",
     "karma-jasmine-html-reporter": "2.1.0",
-    "typescript": "5.4.5",
-    "npm-check-updates": "16.14.18"
+    "npm-check-updates": "16.14.18",
+    "typescript": "5.4.5"
   }
 }

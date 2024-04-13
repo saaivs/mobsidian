@@ -6,6 +6,7 @@ import {
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -16,6 +17,6 @@ export const appConfig: ApplicationConfig = {
     // https://riegler.fr/blog/2024-01-11-zoneless-preview
     // https://stackblitz.com/edit/angular-zoneless-demo
     // https://gist.github.com/e-oz/4d64dd47699d3a63d15572ca49dc3db3
-    provideZonelessChangeDetection(),
+    provideZonelessChangeDetection(), provideAnimationsAsync(),
   ],
 };

@@ -1,12 +1,20 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { COMMON_MODULES } from '../modules/common.modules';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [...COMMON_MODULES],
+  template: `
+    <main class="main">
+      <div class="content">{{ title }}</div>
+      <div>
+        <mat-slide-toggle>Toggle me!</mat-slide-toggle>
+      </div>
+    </main>
+
+    <router-outlet></router-outlet>
+  `,
 })
 export class AppComponent {
   title = 'mobapp';
