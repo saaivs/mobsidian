@@ -1,8 +1,11 @@
 // https://material.angular.io/guide/material-3
 // https://blog.angular.io/material-3-experimental-support-in-angular-17-2-8e681dde650e
 
+
 @use "@angular/material" as mat;
 @use "@angular/material-experimental" as matx;
+
+// @include mat.core();
 
 // https://material.angular.io/guide/material-3#customizing-your-colors
 // $m3-red-palette

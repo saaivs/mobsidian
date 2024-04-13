@@ -2,9 +2,15 @@ import { Component } from '@angular/core';
 import { COMMON_MODULES } from '../modules/common.modules';
 
 @Component({
-  selector: 'app-root',
+  selector: 'page-404',
   standalone: true,
   imports: [...COMMON_MODULES],
-  template: `<router-outlet />`,
+  template: `
+    <div>
+      <h1>404</h1>
+    </div>
+  `,
 })
-export class AppComponent {}
+export class Page404Component {
+
+}

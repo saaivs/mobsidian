@@ -1,3 +1,3 @@
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
-export const NG_MODULES = [RouterOutlet];
+export const NG_MODULES = [RouterOutlet, RouterModule];
