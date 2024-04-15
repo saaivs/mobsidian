@@ -11,6 +11,4 @@ import { COMMON_MODULES } from '../modules/common.modules';
     </div>
   `,
 })
-export class Page404Component {
-
-}
+export class Page404Component {}
